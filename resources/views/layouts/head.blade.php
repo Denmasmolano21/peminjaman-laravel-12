@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>@yield('title', 'Website Peminjaman Barang')</title>
-<link rel="icon" href="https://i.postimg.cc/sfMw57Lt/logo_biu.png" type="image/x-icon">
+<link rel="icon" href="#" type="image/x-icon">
 <meta name="description" content="@yield('description', 'Website Peminjaman Laravel 12')">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

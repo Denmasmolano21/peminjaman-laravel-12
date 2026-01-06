@@ -1,24 +1,20 @@
 <nav class="border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
     <div class="container mx-auto px-4 h-16 flex items-center justify-between">
         <!-- Logo -->
-        <a href="{{ route('home') }}"
+        <a href="#"
             class="flex items-center gap-2 font-serif text-xl font-bold text-primary hover:opacity-90 transition-opacity">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
                 <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
             </svg>
-            <span>UniBorrow</span>
+            <span>Peminjaman Laravel 12</span>
         </a>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center gap-6">
-            <a href="{{ route('items') }}"
+            <a href="#"
                 class="text-sm font-medium transition-colors hover:text-primary {{ request()->routeIs('items') ? 'text-primary' : 'text-muted-foreground' }}">
-                Browse Items
-            </a>
-            <a href="{{ route('dashboard') }}"
-                class="text-sm font-medium transition-colors hover:text-primary {{ request()->routeIs('dashboard') ? 'text-primary' : 'text-muted-foreground' }}">
-                Dashboard
+                Daftar Items
             </a>
 
             <!-- User Dropdown -->
@@ -35,10 +31,10 @@
 
                 <div x-show="open" @click.away="open = false" x-transition
                     class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200">
-                    <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         My Dashboard
                     </a>
-                    <form method="POST" action="{{ route('logout') }}">
+                    <form method="POST" action="#>
                         @csrf
                         <button type="submit"
                             class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100 flex items-center gap-2">
@@ -74,14 +70,14 @@
 
     <!-- Mobile Navigation -->
     <div x-show="mobileOpen" x-transition class="md:hidden border-t bg-white p-4 space-y-4">
-        <a href="{{ route('items') }}" class="block text-sm font-medium text-foreground py-2">
-            Browse Items
+        <a href="#" class="block text-sm font-medium text-foreground py-2">
+            List Barang
         </a>
-        <a href="{{ route('dashboard') }}" class="block text-sm font-medium text-foreground py-2">
+        <a href="#" class="block text-sm font-medium text-foreground py-2">
             Dashboard
         </a>
         <div class="pt-2 border-t">
-            <form method="POST" action="{{ route('logout') }}">
+            <form method="POST" action="#">
                 @csrf
                 <button type="submit" class="flex items-center gap-2 text-sm font-medium text-red-600 py-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
