@@ -5,7 +5,7 @@
     @include('layouts.head')
 </head>
 
-<body class="antialiased bg-background text-foreground">
+<body>
     @include('layouts.navbar')
 
     <main>
@@ -13,15 +13,6 @@
     </main>
 
     @include('layouts.footer')
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-        once: true,
-        easing: 'ease-out-cubic',
-        duration: 900,
-        });
-    </script>
 
     @stack('scripts')
 </body>
